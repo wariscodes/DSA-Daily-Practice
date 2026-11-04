@@ -16,7 +16,7 @@ name = "Education is important"
 count = 0
 
 for ch in name:
-    if ch not in "aeiou":
+    if ch not in "aeiou" and ch.isalpha():
         count += 1
         
 print("Consonent count is :",count)
