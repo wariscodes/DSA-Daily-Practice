@@ -27,3 +27,15 @@ print(result)
 
 # Time Complexity = O(n + m) If we use both array has n elements the Time = O(n)
 # Space Complexity = O(n + m)
+
+# For leetcode solution insertion two array but only unique value store....
+class Solution:
+    def intersection(self, nums1: list[int], nums2: list[int]) -> list[int]:
+        set2 = nums2
+        seen = set()
+        for i in nums1:
+            if i in set2:
+                seen.add(i)
+        result = list(seen)
+        return result
+        
